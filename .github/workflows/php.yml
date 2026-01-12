@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -22,4 +22,4 @@ jobs:
           port: 2121
           script: |
             cd /var/www/testvimala/crudwebsitetool
-            git pull origin master
+            git pull origin main
